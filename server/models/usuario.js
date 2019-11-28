@@ -48,8 +48,8 @@ let usuarioSchema = new Schema({
 usuarioSchema.methods.toJSON = function() {
 
     let user = this;
-    let userObject = user.toObject();
-    delete userObject.password;
+    let userObject = user.toObject(); //obtiene la estructura actual
+    delete userObject.password; //le saca el password para no mostrarlo
 
     return userObject;
 }
