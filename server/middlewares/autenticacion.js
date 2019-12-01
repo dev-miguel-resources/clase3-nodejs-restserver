@@ -20,7 +20,7 @@ let verificaToken = (req, res, next) => {
         }
 
         req.usuario = decoded.usuario; //información decodificada, el paylod del usuario
-        next(); //continua con la ejecución del programa
+        next(); //continua o congela con la ejecución del programa
 
     });
 
